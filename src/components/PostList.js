@@ -5,9 +5,11 @@ function PostList(props){
 
   const postList = props.posts.map((post, index) => {
     return (
-      <PostItem title={post.title} body={post.body} key={index}></PostItem>
+      <PostItem title={post.title} body={post.body} postId={post.id} key={index}></PostItem>
     )
   })
+
+  
 
   return(
     <Fragment>

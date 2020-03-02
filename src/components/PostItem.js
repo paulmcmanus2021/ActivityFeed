@@ -6,12 +6,13 @@ function PostItem(props){
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
+
   return(
-    <div>
-      <h2>{capitalize(props.title)}</h2>
-      <h4>{capitalize(props.body)}</h4>
+    <section className="one-post">
+      <h3>{capitalize(props.title)}</h3>
+      <p>{capitalize(props.body)}</p>
       <button>See comments</button>
-    </div>
+    </section>
   )
 }
 
