@@ -21,9 +21,11 @@ h3 {
   margin: 6px 3px 6px 3px;
 }
 
+
 .pagination {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
-  margin: 0px 500px 0px 500px
+  align-items: center;
+  margin-bottom: 0px;
 }
