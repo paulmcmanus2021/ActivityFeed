@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Toggle from'./Toggle'
 
 function PostItem(props){
 
@@ -11,7 +12,7 @@ function PostItem(props){
     <section className="one-post">
       <h3>{capitalize(props.title)}</h3>
       <p>{capitalize(props.body)}</p>
-      <button>See comments</button>
+      <Toggle />
     </section>
   )
 }
