@@ -29,3 +29,8 @@ h3 {
   align-items: center;
   margin-bottom: 0px;
 }
+
+button {
+  display: block;
+  margin: 0 auto;
+}
