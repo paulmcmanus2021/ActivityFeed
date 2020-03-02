@@ -10,7 +10,7 @@ class MainContainer extends Component {
     }
 
     componentDidMount(){
-    const url = "https://jsonplaceholder.typicode.com/posts"
+    const url = "https://jsonplaceholder.typicode.com/posts?_limit=50"
     fetch(url)
     .then(res => res.json())
     .then(data => this.setState({posts: data}))
@@ -21,7 +21,7 @@ class MainContainer extends Component {
   render(){
     return(
       <div>
-        <h1>I'm Main Container</h1>
+        <PostList posts={this.state.posts} />
       </div>
     )
   }
