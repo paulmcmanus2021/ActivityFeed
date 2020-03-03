@@ -19,6 +19,9 @@ h3 {
   border-style: double;
   border-color: #302D2E;
   margin: 6px 3px 6px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -37,4 +40,9 @@ button {
 
 .page-link {
   color: black;
+}
+
+.post-comments {
+  display: flex;
+  flex-direction: column;
 }

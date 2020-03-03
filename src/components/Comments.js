@@ -1,25 +1,31 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 
 
-class Comments extends Component {
-  constructor(props){
-    super(props);
-      this.state ={
-        comments: []
-      }
-  }
+function Comments(props){
 
-
-
-
-
-  render() {
-    return(
-      <div>
-        <h1>Comment Component</h1>
-      </div>
+  const comments = props.comments.map((comment, index) => {
+    return (
+      <Fragment>
+        <h3>{index + 1}.{comment.name}</h3>
+        <p>{comment.body}</p>
+        <p>-{comment.email}</p>
+      </Fragment>
     )
-  }
+  })
+
+
+
+
+
+
+
+  return(
+    <section className="post-comments">
+      <h1>Comments about this post:</h1>
+      {comments}
+    </section>
+
+  )
 }
 
 export default Comments;
