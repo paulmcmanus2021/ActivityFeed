@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Comments from './Comments'
+
 
 class Toggle extends Component {
   state = {
@@ -15,7 +17,7 @@ class Toggle extends Component {
   render() {
     return(
       <div>
-        {this.state.on && <h1>Comments will be here</h1>}
+        {this.state.on && <Comments />}
         <button onClick={this.toggle}>Show/Hide Comments</button>
       </div>
     )

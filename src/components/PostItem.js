@@ -8,11 +8,14 @@ function PostItem(props){
   }
 
 
-  return(
+
+
+  return (
     <section className="one-post">
       <h3>{capitalize(props.title)}</h3>
       <p>{capitalize(props.body)}</p>
       <Toggle />
+
     </section>
   )
 }

@@ -34,3 +34,7 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+.page-link {
+  color: black;
+}

@@ -44,7 +44,6 @@ class MainContainer extends Component {
           <section className="post-list">
             <PostList posts={currentPosts} currentPage={this.state.currentPage} postsPerPage={this.state.postsPerPage} />
             <Pagination postsPerPage={this.state.postsPerPage} totalPosts={this.state.posts.length} paginate={paginate} />
-            {console.log(this.state.posts)}
           </section>
         </Fragment>
       )
