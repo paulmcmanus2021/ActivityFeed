@@ -17,7 +17,7 @@ class Toggle extends Component {
   render() {
     return(
       <div>
-        {this.state.on && <Comments comments={this.props.comments} capitalize={this.state.capitalize} />}
+        {this.state.on && <Comments comments={this.props.comments} />}
         <button onClick={this.toggle}>Show/Hide Comments</button>
       </div>
     )

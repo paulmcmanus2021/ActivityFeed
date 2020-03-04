@@ -1,21 +1,14 @@
 import React, { Fragment } from 'react';
+import CommentItem from './CommentItem'
 
 
 function Comments(props){
 
   const comments = props.comments.map((comment, index) => {
     return (
-      <Fragment>
-        <h3>{index + 1}.{comment.name}</h3>
-        <p>{comment.body}</p>
-        <p>-{comment.email}</p>
-      </Fragment>
+      <CommentItem key={index} title={comment.name} body={comment.body} author={comment.email}></CommentItem>
     )
   })
-
-
-
-
 
 
 

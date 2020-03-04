@@ -6,8 +6,7 @@ class PostItem extends Component {
     super(props);
     this.state = {
       comments: []
-    }
-    this.capitalize = this.capitalize.bind(this);
+    };
   }
 
   capitalize(str){
@@ -27,7 +26,7 @@ class PostItem extends Component {
    <section className="one-post">
      <h3>{this.capitalize(this.props.title)}</h3>
      <p>{this.capitalize(this.props.body)}</p>
-     <Toggle comments={this.state.comments} capitalize={this.state.capitalize} />
+     <Toggle comments={this.state.comments} />
    </section>
   )
   }
