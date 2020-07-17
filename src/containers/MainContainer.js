@@ -38,8 +38,8 @@ const MainContainer = () => {
         <Fragment>
           <h1 className="main-title">Activity Feed</h1>
           <section className="post-list">
-            <PostList posts={currentPosts} currentPage={currentPage} postsPerPage={postsPerPage} />
             <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
+            <PostList posts={currentPosts} currentPage={currentPage} postsPerPage={postsPerPage} />
           </section>
         </Fragment>
       )
